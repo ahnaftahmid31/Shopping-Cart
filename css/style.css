@@ -1,0 +1,72 @@
+:root {
+  --border-width : 1px;
+  --border-color: #333;
+  --border-rad: 0.5rem;
+}
+
+.bag-image {
+  background-image: url("../img/cart2.jpg");
+  filter: blur(10px);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+}
+/* a beaker shaped border but flipped */
+.border-t {
+  border-width: 1px 1px 0 1px;
+  border-width: var(--border-width) var(--border-width) 0 var(--border-width);
+  border-color: #333;
+  border-color: var(--border-color);
+  border-radius: 15px 15px 0 0;
+  border-radius: var(--border-rad) var(--border-rad) 0 0;
+}
+/* makes a beaker shaped border */
+.border-b {
+  border-width: 0 1px 1px 1px;
+  border-width: 0 var(--border-width) var(--border-width) var(--border-width);
+  border-color: #333;
+  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 var(--border-rad) var(--border-rad);
+}
+
+
+.product-list {
+  height: 85vh;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.list-group-item {
+  background: transparent;
+}
+/* list item has border by default in bootstratp */
+li.borderless {
+  border: none;
+}
+.bg-blue-trans {
+  background: #76a1ffab;
+}
+.bg-violet-trans {
+  background: #a27cfca1;
+}
+/* card header gives its own b-r so, */
+.card-header {
+  border-radius: inherit !important;
+}
+.scrollable {
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .btn{
+    float: left !important;
+    margin-top: 10px !important;
+  }
+  .price {
+    display: block;
+  }
+}
